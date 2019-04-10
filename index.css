@@ -1,0 +1,19 @@
+/* index */
+  body {
+    background-color: lightblue;
+  }
+
+  h1   {
+    color: navy;
+    margin-left: 20px;
+  }
+
+  nav {
+    color: silver
+  }
+
+
+  div {
+    color: black;
+    margin-left: 20px;
+  }  
