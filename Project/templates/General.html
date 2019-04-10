@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JK book shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport1" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet2" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style >
+      body {
+    background-color: lightblue;
+  }
+
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+  nav {
+    color: silver
+  }
+  p.indent{
+    padding-left:  1.8em
+  }
+    
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<a class="navbar-brand" href="{{ url_for('index') }}">JK Book shop </a>
+	<!--links-->
+	<ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" a href="{{ url_for('New_arrivals') }}">New arrivals</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" a href="{{ url_for('login') }}">Login
+         </a>
+    </li>
+		
+		<!--Dropdown-->
+		<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Genre</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" a href="{{ url_for('Fiction') }}">Fiction</a>
+        <a class="dropdown-item" a href="{{ url_for('Non_Fiction') }}">Non Fiction</a>
+        <a class="dropdown-item" a href="{{ url_for('Language') }}">Language</a>
+        <a class="dropdown-item" a href="{{ url_for('Science') }}">Science</a>
+        <a class="dropdown-item" a href="{{ url_for('General') }}">General</a>
+        <a class="dropdown-item" a href="{{ url_for('index') }}">Home</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" a href="{{ url_for('Shopping_cart') }}">Shopping cart</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('Register') }}">Register</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('Contact') }}">Contact us</a>
+    </li>
+  </ul>
+</nav>
+<p><h2>General books</h2>
+
+<div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">#1<br>
+      <img src="Lan1.jpg" width="150px" height="170px" alt="Lan1"><br>Chineasy Everyday: Learning Chinese Through Its Culture <br><br>
+      Author:Shaolan<br>
+      HKD$295.00 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button></div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">#2<br>
+      <img src="child_fiction01.jpg" width="150px" height="170px" alt="child_fiction01"><br>
+      Insight Guides Phrasebook: Dutch<br><br>
+      Author:Alice Paul Tapper<br>
+      HKD$86.66 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+
+    <div class="col-sm-4" style="background-color:lavender;">#3<br>
+      <img src="general01.jpg" width="150px" height="170px" alt="general01"><br>
+        Girl, Stop Apologizing: A Shame-Free Plan for Embracing and Achieving Your Goals<br>
+        Author:Alice Paul Tapper<br>
+        HKD$115.39 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavenderblush;">#4<br>
+      <img src="Novel01.jpg" width="150px" height="170px" alt="Novel01"><br>The Woman in the Window: A Novel<br>
+      Author:A. J Finn<br>
+      HKD$115.39 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+    <div class="col-sm-4" style="background-color:lavender;">#5<br>
+    <img src="The_Expanse.jpg" width="150px" height="170px" alt="The_Expanse"><br>Tiamat's Wrath (The Expanse)<br>
+      Author:James S. A. Corey<br>
+      HKD$115.39 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">#6<br>
+    <img src="Harry01.jpg" width="150px" height="170px" alt="Harry01"><br>Harry Potter and the Goblet of Fire: The    Illustrated Edition<br>Author:J. K. Rowling<br>
+      HKD$115.39 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+  </div>
+</div>
+</body>
+</html>

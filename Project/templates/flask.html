@@ -1,0 +1,28 @@
+from flask import flask
+import pymysql app = Flask(__name__)
+app = Flask(__name__)
+
+
+@app.route("/")
+def hello_world():
+        return  'Hello 205CDE!'
+
+
+# open database connection 
+db = pymysql.connect(“localhost”, “Database_Username”, “Database_password”, “Database_name”) 
+# prepare a cursor object using cursor() method
+ cursor = db.cursor() cursor.execute(“DROP TABLE IF EXISTS STUDENT”) 
+ # Create table as per requirement 
+ sql = ”””CREATE TABLE STUDENT (FIRST_NAME CHAR(20) NOT NULL, LAST_NAME CHAR(20), AGE INT, GENDER CHAR(1))””” 
+ cursor.execute(sql) 
+ db.close()
+
+
+
+
+
+
+if __name__ == '__main__':
+        app.debug = True
+        app.run(host="0.0.0.0" , port=8000)
+

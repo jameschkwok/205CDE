@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Avengers book shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport1" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet2" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <style >
+      body {
+    background-color: lightblue;
+  }
+
+  h1 {
+    color: navy;
+    margin-left: 20px;
+  }
+
+  nav {
+    color: silver
+  }
+  p.indent{
+    padding-left:  1.8em
+  }
+    
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	<a class="navbar-brand" href="{{ url_for('index') }}">JK Book shop </a>
+	<ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" a href="{{ url_for('New_arrivals') }}">New arrivals</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" a href="{{ url_for('login') }}">Login
+         </a>
+    </li>
+		
+		<!--Dropdown-->
+		<li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Genre</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" a href="{{ url_for('Fiction') }}">Fiction</a>
+        <a class="dropdown-item" a href="{{ url_for('Non_Fiction') }}">Non Fiction</a>
+        <a class="dropdown-item" a href="{{ url_for('Language') }}">Language</a>
+        <a class="dropdown-item" a href="{{ url_for('Science') }}">Science</a>
+        <a class="dropdown-item" a href="{{ url_for('General') }}">General</a>
+        <a class="dropdown-item" a href="{{ url_for('index') }}">Home</a>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" a href="{{ url_for('Shopping_cart') }}">Shopping cart</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('Register') }}">Register</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('Contact') }}">Contact us</a>
+    </li>
+  </ul>
+</nav>
+<p><h2>Non-Fiction</h2>
+
+<div class="container-fluid">
+  
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavender;">#1<br>
+      <img src={{url_for('static', filename = 'img/history_book01.jpg')}} id= "history_book01" /><br>The Right Side of History: How Reason and Moral Purpose Made the West Great <br><br>
+      Author:Ben Shapiro<br>
+      HKD$131.79 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">#2<br>
+      <img src={{url_for('static', filename = 'img/Nonfi1.jpg')}} id= "Nonfi1" /><br>
+      Born a Crime: Stories from a South African Childhood<br><br>
+      Author:Trevor Noah<br>
+      HKD$144.00 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+
+    <div class="col-sm-4" style="background-color:lavender;">#3<br>
+      <img src={{url_for('static', filename = 'img/general01.jpg')}} id= "general01" />
+        <br>
+        Girl, Stop Apologizing: A Shame-Free Plan for Embracing and Achieving Your Goals<br>
+        Author:Alice Paul Tapper<br>
+        HKD$88.30 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4" style="background-color:lavenderblush;">#4<br>
+      <img src={{url_for('static', filename = 'img/Nonfi2.jpg')}} id= "Nonfi2" /><br>The Power of Now<br>
+      Author:Eckhart Tolle<br>
+      HKD$133.00 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+    <div class="col-sm-4" style="background-color:lavender;">#5<br>
+    <img src={{url_for('static', filename = 'img/nike.jpg')}} id= "nike" /><br>Shoe Dog: A Memoir by the Creator of Nike<br>
+      Author: Phil Knight<br>
+      HKD$144.00 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+    <div class="col-sm-4" style="background-color:lavenderblush;">#6<br>
+    <img src={{url_for('static', filename = 'img/nonfi3.jpg')}} id= "nonfi3" /><br>Outliers: The Story of Success<br>
+      Author:Malcolm Gladwell<br>
+      HKD$123.07 <button type="button" onclick="alert('Added to shoppring cart')">Add to cart</button> </div>
+  </div>
+</div>
+</body>
+</html>

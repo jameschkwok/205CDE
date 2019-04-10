@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>base</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+			<a class="navbar-brand">JK Book shop</a>
+			<!--links-->
+			<ul class="navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/New_arrivals.html">New arrivals</a>
+				</li>
+				<li class="nav-item">
+		   			<a class="nav-link" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/login.html">Login
+		     		</a>
+				</li>
+		
+				<!--Dropdown-->
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Genre</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/Fiction.html">Fiction</a>
+						<a class="dropdown-item" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/Non_Fiction.html">Non-fiction</a>
+						<a class="dropdown-item" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/Language.html">Language</a>
+						<a class="dropdown-item" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/Science.html">Science</a>
+						<a class="dropdown-item" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/General.html">General</a>
+							<a class="dropdown-item" href="index.html">Home</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/Shopping_cart.html">Shopping cart		</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/Register.html">Register</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="file:///C:/Users/PC/Desktop/205COM/Project/templates/Contact.html">Contact us</a>
+				</li>
+			</ul>
+		</nav>
+		{% block content %}
+		{% endblock %} 
+
+	</body>
+
+</html>
